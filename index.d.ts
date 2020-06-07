@@ -1,5 +1,3 @@
-import { drawOnCustomCanvas } from "./src/patterns";
-
 /**
  * Generate a single (HTML5) canvas pattern
  * @param shapeType pattern shape type
@@ -24,7 +22,7 @@ export declare function draw(
  * @param patternColor color of the pattern e.g. '#000000'
  * @param size of pattern "gutter"
  */
-export declare function draw(
+export declare function drawOnCustomCanvas(
     shapeType: 'plus' | 'cross' | 'dash' | 'cross-dash' | 'dot' | 'dot-dash' | 'disc' | 'ring' | 'line' | 'line-vertical' | 'weave' | 'zigzag' | 'zigzag-vertical' | 'diagonal' | 'diagonal-right-left' | 'square' | 'box' | 'triangle' | 'triangle-inverted' | 'diamond' | 'diamond-box',
     /** background color of pattern e.g. '#1f77b4' */
     backgroundColor: string,
@@ -41,7 +39,7 @@ export declare function generate(colorList: Array<string>): Array<CanvasPattern>
 declare module "patternomaly/draw" {
     export = draw;
 }
-declare module "patternomaly/drawWithCustomCanvas" {
+declare module "patternomaly/drawOnCustomCanvas" {
     export = drawOnCustomCanvas;
 }
 declare module "patternomaly/generate" {
