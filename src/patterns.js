@@ -4,9 +4,20 @@ export function draw (
   shapeType = 'square',
   backgroundColor,
   patternColor,
-  size
+  size, 
 ) {
   const patternCanvas = document.createElement('canvas');
+  return drawOnCustomCanvas(shapeType, backgroundColor, patternCanvas, patternColor, size);
+}
+
+
+export function drawOnCustomCanvas (
+  shapeType = 'square',
+  backgroundColor,
+  patternCanvas,
+  patternColor,
+  size
+) {
   const patternContext = patternCanvas.getContext('2d');
   const outerSize = size * 2;
 
