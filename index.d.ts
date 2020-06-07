@@ -27,7 +27,7 @@ export declare function drawOnCustomCanvas(
     /** background color of pattern e.g. '#1f77b4' */
     backgroundColor: string,
     /** color of the pattern e.g. #000000 */
-    customCanvas: Canvas,
+    customCanvas: HTMLCanvasElement,
     patternColor?: string,
     size?: number): CanvasPattern
 
